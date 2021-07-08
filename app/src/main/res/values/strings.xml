@@ -18,4 +18,5 @@
     <string name="plus">+</string>
     <string name="backspace">⌫</string>
     <string name="zero">C</string>
+    <string name="switchTheme">Theme</string>
 </resources>
