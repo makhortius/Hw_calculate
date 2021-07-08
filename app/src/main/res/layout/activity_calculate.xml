@@ -218,16 +218,28 @@
         android:background="@android:color/white"
         android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/switchLayout"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_equally"
+            android:text="@string/switchTheme"
+            android:textColor="@android:color/primary_text_dark"
+            android:textSize="@dimen/TextSize" />
 
         <Button
             android:id="@+id/equally"
             style="@android:style/Widget.Button.Inset"
             android:layout_height="match_parent"
+            android:layout_width="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/custom_button_equally"
             android:text="@string/equally"
             android:textColor="@android:color/primary_text_dark"
             android:textSize="@dimen/TextSize" />
+
 
 
     </LinearLayout>
