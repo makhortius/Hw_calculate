@@ -300,26 +300,13 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="74dp"
+        android:gravity="bottom|end"
         android:hint="@string/zero"
         android:textSize="@dimen/TextViewSize"
-        android:gravity="bottom|end"
         app:layout_constraintBottom_toTopOf="@+id/separate"
         app:layout_constraintEnd_toEndOf="@+id/separate"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/zero" />
-
-    <Button
-        android:id="@+id/switchLayoutBack"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:layout_margin="3dp"
-        android:background="@drawable/custom_button_equally"
-        android:text="@string/switchTheme"
-        android:textColor="@color/colorWhite"
-        android:textSize="40sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="16dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

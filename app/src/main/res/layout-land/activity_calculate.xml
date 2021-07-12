@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@drawable/bg_land"
     android:gravity="bottom"
     android:hapticFeedbackEnabled="false"
     android:orientation="vertical">
+
 
     <Switch
         android:id="@+id/switch1"
@@ -28,44 +29,12 @@
         android:textSize="@dimen/TextViewSize" />
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/LinearLayoutSize"
         android:background="@android:color/white"
         android:orientation="horizontal">
 
-
-        <Button
-            android:id="@+id/switchLayout"
-            style="@android:style/Widget.Button.Inset"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/colorOrangeDark"
-            android:text="@string/switch_layout"
-            android:textColor="@android:color/primary_text_dark"
-            android:textSize="@dimen/TextSize" />
-
-        <Button
-            android:id="@+id/plus_minus"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/plus_minus"
-            android:textColor="@android:color/holo_orange_dark"
-            android:textSize="@dimen/TextSize" />
-
-        <Button
-            android:id="@+id/backspace"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/backspace"
-            android:textColor="@android:color/holo_orange_dark"
-            android:textSize="@dimen/TextSize" />
 
         <Button
             android:id="@+id/separate"
@@ -76,16 +45,6 @@
             android:text="@string/separate"
             android:textColor="@android:color/holo_orange_dark"
             android:textSize="@dimen/TextSize" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/LinearLayoutSize"
-        android:background="@android:color/white"
-        android:orientation="horizontal">
-
         <Button
             android:id="@+id/button7"
             android:layout_width="wrap_content"
@@ -135,6 +94,15 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/plus_minus"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/plus_minus"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="@dimen/TextSize" />
+        <Button
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -181,6 +149,17 @@
         android:background="@android:color/white"
         android:orientation="horizontal">
 
+
+        <Button
+            android:id="@+id/switchLayout"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorOrangeDark"
+            android:text="@string/switch_layout"
+            android:textColor="@android:color/primary_text_dark"
+            android:textSize="@dimen/TextSize" />
         <Button
             android:id="@+id/button1"
             android:layout_width="wrap_content"
@@ -228,7 +207,6 @@
         android:layout_height="@dimen/LinearLayoutSize"
         android:background="@android:color/white"
         android:orientation="horizontal">
-
         <Button
             android:id="@+id/zero"
             style="@style/Widget.AppCompat.Button.Borderless.Colored"
@@ -236,6 +214,15 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/zero"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="@dimen/TextSize" />
+        <Button
+            android:id="@+id/backspace"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/backspace"
             android:textColor="@android:color/holo_orange_dark"
             android:textSize="@dimen/TextSize" />
 
@@ -262,13 +249,14 @@
         <Button
             android:id="@+id/equally"
             style="@android:style/Widget.Button.Inset"
-            android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_width="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/custom_button_equally"
             android:text="@string/equally"
             android:textColor="@android:color/primary_text_dark"
             android:textSize="@dimen/TextSize" />
+
 
 
     </LinearLayout>
