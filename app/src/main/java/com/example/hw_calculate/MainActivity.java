@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_calculate);
 
         Button switchLayout = findViewById(R.id.switchLayout);
+        Button switch_layout_back = findViewById(R.id.switch_layout_back);
         int[] numberIds = new int[]{
 
                 R.id.button7,
@@ -86,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
     }
     @Override
     public void onSaveInstanceState(@NonNull Bundle instanceState) {
@@ -95,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle instanceState) {
         super.onRestoreInstanceState(instanceState);
+        numText.setText(calculator.getText());
         calculator = (CalculateLogic) instanceState.getSerializable(KEY_LOGIC);
 
     }

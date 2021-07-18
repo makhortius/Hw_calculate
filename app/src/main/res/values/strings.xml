@@ -24,4 +24,5 @@
     <string name="percent">%</string>
     <string name="plus_minus">±</string>
     <string name="switch_theme">Switch Theme</string>
+    <string name="back">back</string>
 </resources>

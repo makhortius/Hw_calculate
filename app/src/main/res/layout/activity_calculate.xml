@@ -16,10 +16,9 @@
         android:layout_weight="1"
         android:gravity="top|end"
         android:text="@string/switch_theme"
-        android:textColor="@color/colorOrangeDark"
         />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/numText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,45 +35,36 @@
         android:orientation="horizontal">
 
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/switchLayout"
-            style="@android:style/Widget.Button.Inset"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/colorOrangeDark"
             android:text="@string/switch_layout"
-            android:textColor="@android:color/primary_text_dark"
             android:textSize="@dimen/TextSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/plus_minus"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/plus_minus"
-            android:textColor="@android:color/holo_orange_dark"
             android:textSize="@dimen/TextSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/backspace"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/backspace"
-            android:textColor="@android:color/holo_orange_dark"
             android:textSize="@dimen/TextSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/separate"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/separate"
-            android:textColor="@android:color/holo_orange_dark"
             android:textSize="@dimen/TextSize" />
 
 
@@ -86,7 +76,7 @@
         android:background="@android:color/white"
         android:orientation="horizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button7"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -96,7 +86,7 @@
             android:textColor="@color/_numbers"
             android:textSize="@dimen/TextSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button8"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -106,7 +96,7 @@
             android:textColor="@color/_numbers"
             android:textSize="@dimen/TextSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button9"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -116,14 +106,12 @@
             android:textColor="@color/_numbers"
             android:textSize="@dimen/TextSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/multi"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/multi"
-            android:textColor="@android:color/holo_orange_dark"
             android:textSize="@dimen/TextSize" />
 
     </LinearLayout>
@@ -134,7 +122,7 @@
         android:background="@android:color/white"
         android:orientation="horizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -144,7 +132,7 @@
             android:textColor="@color/_numbers"
             android:textSize="@dimen/TextSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -154,7 +142,7 @@
             android:textColor="@color/_numbers"
             android:textSize="@dimen/TextSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button6"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -164,14 +152,12 @@
             android:textColor="@color/_numbers"
             android:textSize="@dimen/TextSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/minus"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/minus"
-            android:textColor="@android:color/holo_orange_dark"
             android:textSize="@dimen/TextSize" />
     </LinearLayout>
 
@@ -181,7 +167,7 @@
         android:background="@android:color/white"
         android:orientation="horizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -191,7 +177,7 @@
             android:textColor="@color/_numbers"
             android:textSize="@dimen/TextSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -201,7 +187,7 @@
             android:textColor="@color/_numbers"
             android:textSize="@dimen/TextSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -211,14 +197,12 @@
             android:textColor="@color/_numbers"
             android:textSize="@dimen/TextSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/plus"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/plus"
-            android:textColor="@android:color/holo_orange_dark"
             android:textSize="@dimen/TextSize" />
 
     </LinearLayout>
@@ -229,17 +213,15 @@
         android:background="@android:color/white"
         android:orientation="horizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/zero"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/zero"
-            android:textColor="@android:color/holo_orange_dark"
             android:textSize="@dimen/TextSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button0"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -249,17 +231,15 @@
             android:textColor="@color/_numbers"
             android:textSize="@dimen/TextSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/doubleZero"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/doubleZero"
-            android:textColor="@android:color/holo_orange_dark"
             android:textSize="@dimen/TextSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/equally"
             style="@android:style/Widget.Button.Inset"
             android:layout_width="wrap_content"

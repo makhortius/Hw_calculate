@@ -6,4 +6,5 @@
     <color name="_numbers">#504D4D</color>
     <color name="buttons_bg">#DFDFDF</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="_btnText">#673AB7</color>
 </resources>
