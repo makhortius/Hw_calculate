@@ -17,7 +17,6 @@
         android:layout_weight="1"
         android:gravity="top|end"
         android:text="@string/switch_theme"
-        android:textColor="@color/colorOrangeDark"
         />
 
     <TextView
@@ -38,12 +37,10 @@
 
         <Button
             android:id="@+id/separate"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/separate"
-            android:textColor="@android:color/holo_orange_dark"
             android:textSize="@dimen/TextSize" />
         <Button
             android:id="@+id/button7"
@@ -77,12 +74,10 @@
 
         <Button
             android:id="@+id/multi"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/multi"
-            android:textColor="@android:color/holo_orange_dark"
             android:textSize="@dimen/TextSize" />
 
     </LinearLayout>
@@ -95,12 +90,10 @@
 
         <Button
             android:id="@+id/plus_minus"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/plus_minus"
-            android:textColor="@android:color/holo_orange_dark"
             android:textSize="@dimen/TextSize" />
         <Button
             android:id="@+id/button4"
@@ -134,12 +127,10 @@
 
         <Button
             android:id="@+id/minus"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/minus"
-            android:textColor="@android:color/holo_orange_dark"
             android:textSize="@dimen/TextSize" />
     </LinearLayout>
 
@@ -192,12 +183,10 @@
 
         <Button
             android:id="@+id/plus"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/plus"
-            android:textColor="@android:color/holo_orange_dark"
             android:textSize="@dimen/TextSize" />
 
     </LinearLayout>
@@ -209,21 +198,17 @@
         android:orientation="horizontal">
         <Button
             android:id="@+id/zero"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/zero"
-            android:textColor="@android:color/holo_orange_dark"
             android:textSize="@dimen/TextSize" />
         <Button
             android:id="@+id/backspace"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/backspace"
-            android:textColor="@android:color/holo_orange_dark"
             android:textSize="@dimen/TextSize" />
 
         <Button
@@ -238,12 +223,10 @@
 
         <Button
             android:id="@+id/doubleZero"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/doubleZero"
-            android:textColor="@android:color/holo_orange_dark"
             android:textSize="@dimen/TextSize" />
 
         <Button
