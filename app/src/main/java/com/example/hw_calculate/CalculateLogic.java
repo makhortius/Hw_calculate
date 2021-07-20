@@ -32,9 +32,7 @@ public class CalculateLogic implements Serializable {
         if (inputStr.length() < 10) {
             switch (buttonId) {
                 case R.id.button0:
-                    if (inputStr.length() != 0) {
-                        inputStr.append("0");
-                    }
+                    inputStr.append("0");
                     break;
                 case R.id.button1:
                     inputStr.append("1");
@@ -75,16 +73,6 @@ public class CalculateLogic implements Serializable {
                     inputStr.setLength(0);
                     state = State.firstArgInput;
                     break;
-                case R.id.plus_minus:
-                    if (state == State.firstArgInput && inputStr.length() > 0) {
-                        firstArg = 0 - firstArg;
-                        inputStr.append(firstArg);
-                    } else if (state == State.secondArgInput && inputStr.length() > 0) {
-                        secondArg = 0 - secondArg;
-                        inputStr.append(secondArg);
-                    }
-                    break;
-
             }
         }
     }
@@ -98,7 +86,7 @@ public class CalculateLogic implements Serializable {
             switch (actionSelected) {
                 case R.id.separate:
                     if (secondArg == 0) {
-                        inputStr.setLength(0);
+                        inputStr.append("error");
                         break;
                     } else {
                         inputStr.append(firstArg / secondArg);

@@ -18,11 +18,13 @@
     <string name="plus">+</string>
     <string name="backspace">⌫</string>
     <string name="zero">C</string>
-    <string name="switch_layout">Const</string>
+    <string name="switch_layout">⚙</string>
     <string name="doubleZero">00</string>
-    <string name="darkTheme">DT</string>
     <string name="percent">%</string>
     <string name="plus_minus">±</string>
     <string name="switch_theme">Switch Theme</string>
-    <string name="back">back</string>
+    <string name="defaultTheme"> По умолчанию</string>
+    <string name="NightTheme"> Ночная тема</string>
+    <string name="PinkTheme"> Красно-розовая тема</string>
+    <string name="VeryDarkTheme"> Темная тема</string>
 </resources>
