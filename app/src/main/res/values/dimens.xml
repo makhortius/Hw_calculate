@@ -4,4 +4,5 @@
     <dimen name="TextSize">25sp</dimen>
     <dimen name="TextViewSize">45sp</dimen>
     <dimen name="LinearLayoutSize">70dp</dimen>
+
 </resources>

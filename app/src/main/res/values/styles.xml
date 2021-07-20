@@ -26,6 +26,24 @@
 
     </style>
 
+    <style name="AppThemeLight" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">#e91e63</item>
+        <item name="colorPrimaryDark">#b0003a</item>
+        <item name="colorAccent">#ff6090</item>
+    </style>
+
+    <style name="AppThemeDark" parent="Theme.MaterialComponents">
+        <item name="android:textColor">@color/cardview_dark_background</item>
+    </style>
+
+    <style name="NumberDisplayStyle" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="backgroundTint">@color/_btnNumBack</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/_numbers</item>
+        <item name="android:textSize">@dimen/TextSize</item>
+    </style>
 
     <color name="_btnBack">#FFFFFF</color>
 </resources>

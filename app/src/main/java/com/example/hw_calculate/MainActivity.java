@@ -3,24 +3,29 @@ package com.example.hw_calculate;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioGroup;
+import android.widget.Switch;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+import com.google.android.material.radiobutton.MaterialRadioButton;
+
+public class MainActivity extends BaseActivity {
     TextView numText;
     private CalculateLogic calculator;
     private final static String KEY_LOGIC = "Calculator";
     private final static Integer DEFAULT = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculate);
 
-        Button switchLayout = findViewById(R.id.switchLayout);
-        Button switch_layout_back = findViewById(R.id.switch_layout_back);
+
         int[] numberIds = new int[]{
 
                 R.id.button7,
@@ -52,22 +57,20 @@ public class MainActivity extends AppCompatActivity {
         numText = findViewById(R.id.numText);
         calculator = new CalculateLogic();
 
-        View.OnClickListener numberButtonClickListener = new View.OnClickListener(){
+        View.OnClickListener numberButtonClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 calculator.onNumPressed(v.getId());
                 numText.setText(calculator.getText());
             }
         };
-        View.OnClickListener actionButtonClickListener = new View.OnClickListener(){
+        View.OnClickListener actionButtonClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 calculator.onActionPressed(v.getId());
                 numText.setText(calculator.getText());
             }
         };
-
-
 
 
         for (int numberId : numberIds) {
@@ -77,28 +80,51 @@ public class MainActivity extends AppCompatActivity {
             findViewById(value).setOnClickListener(actionButtonClickListener);
         }
 
-
-
-        switchLayout.setOnClickListener(new View.OnClickListener() {
+        Button button= findViewById(R.id.switchLayout);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MainActivity.this.setContentView(R.layout.activity_constrait_calculate);
+                MainActivity.this.setContentView(R.layout.activity_settings);
+                initThemeChooser();
             }
         });
-
-
-
     }
+
+
     @Override
     public void onSaveInstanceState(@NonNull Bundle instanceState) {
         super.onSaveInstanceState(instanceState);
         instanceState.putSerializable(KEY_LOGIC, calculator);
     }
+
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle instanceState) {
         super.onRestoreInstanceState(instanceState);
-        numText.setText(calculator.getText());
         calculator = (CalculateLogic) instanceState.getSerializable(KEY_LOGIC);
+        numText.setText(calculator.getText());
 
+    }
+
+
+    private void initThemeChooser() {
+        initRadioButton(findViewById(R.id.radioButtonMyTheme),
+                MyTheme);
+        initRadioButton(findViewById(R.id.radioButtonNightMode),
+                NightMode);
+        initRadioButton(findViewById(R.id.radioButtonMaterialLightDarkAction),
+                AppThemeLight);
+        initRadioButton(findViewById(R.id.radioButtonMaterialDark),
+                AppThemeDark);
+        RadioGroup rg = findViewById(R.id.radioButtons);
+    }
+
+    private void initRadioButton(View button, final int codeStyle) {
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setAppTheme(codeStyle);
+                recreate();
+            }
+        });
     }
 }

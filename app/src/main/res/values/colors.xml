@@ -7,4 +7,5 @@
     <color name="buttons_bg">#DFDFDF</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="_btnText">#673AB7</color>
+    <color name="_btnNumBack">#E5E6E5</color>
 </resources>
